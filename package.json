@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  },
+  "scripts": {
+    "team project":"px @tailwindcss/cli -i ./src/app.css -o ./src/normalize.css --watch"
+  }
+}
