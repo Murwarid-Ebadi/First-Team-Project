@@ -11,6 +11,6 @@ npx @tailwindcss/cli -i ./src/app.css -o ./src/normalize.css --watch
     --color-bg-dark:#EFF1F3;
     --colo-bg-white:#FFFFFF;
     --color-bg-darker:#FDFDFD;
-    --colo-dark:#212529;
-    --color-darkbright:#32383E;
+    --color-dark:#212529;
+    --color-darkbright:#909294;
 }
