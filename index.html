@@ -1,14 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/normalize.css">
-    <link rel="stylesheet" href="src/style.css">
-</head>
-<body>
-    
-</body>
-<script src="src/main.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Section</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="blog">
+    <section class="blog-section">
+      <p class="subtitle">OUR BLOG</p>
+      <h2 class="title">What Is Happening</h2>
+
+      <div class="blog-container">
+        <!-- Blog Card 1 -->
+        <div class="blog-card">
+          <p class="meta">10 JAN 2020 | 3 COMMENTS | JOHN DOE</p>
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p class="excerpt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            imperdiet libero id nisi euismod, sed porta est consectetur...
+          </p>
+          <a href="#" class="read-more">READ MORE +</a>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="blog-card">
+          <p class="meta">10 JAN 2020 | 3 COMMENTS | JOHN DOE</p>
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p class="excerpt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            imperdiet libero id nisi euismod, sed porta est consectetur...
+          </p>
+          <a href="#" class="read-more">READ MORE +</a>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="blog-card">
+          <p class="meta">10 JAN 2020 | 3 COMMENTS | JOHN DOE</p>
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p class="excerpt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            imperdiet libero id nisi euismod, sed porta est consectetur...
+          </p>
+          <a href="#" class="read-more">READ MORE +</a>
+        </div>
+      </div>
+
+      <!-- Slider Pagination -->
+      <div class="pagination">
+        <span class="dot"></span>
+        <span class="dot active"></span>
+      </div>
+    </section>
+
+    </div>
+  </body>
+
+    <script>
+      const dots = document.querySelectorAll(".dot");
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          // Remove active class from all dots
+          dots.forEach((d) => d.classList.remove("active"));
+          // Add active class to clicked dot
+          dot.classList.add("active");
+
+          console.log(`Switched to slide ${index + 1}`);
+        });
+      });
+    </script>
+  </body>
 </html>

@@ -1,2 +1,4 @@
 @import "tailwindcss";
-/*npx @tailwindcss/cli -i ./src/app.css -o ./src/normalize.css --watch*/
+/* 
+npx @tailwindcss/cli -i ./src/app.css -o ./src/normalize.css --watch
+ */
